@@ -5,7 +5,7 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 
 import com.susyimes.youtuberecyclerview.Constant;
-import com.susyimes.youtuberecyclerview.VedioFragment;
+import com.susyimes.youtuberecyclerview.VideoFragment;
 import com.susyimes.youtuberecyclerview.rxbus.RxBus;
 import com.susyimes.youtuberecyclerview.rxbus.SusAction;
 
@@ -15,8 +15,8 @@ public class MainActivity extends FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        VedioFragment vedioFragment=new VedioFragment();
-        getSupportFragmentManager().beginTransaction().add(R.id.fragmentc,vedioFragment).commit();
+        VideoFragment videoFragment=new VideoFragment();
+        getSupportFragmentManager().beginTransaction().add(R.id.fragmentc,videoFragment).commit();
     }
 
     @Override

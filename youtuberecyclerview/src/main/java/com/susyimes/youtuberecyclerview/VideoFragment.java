@@ -19,7 +19,7 @@ import java.util.List;
 import rx.functions.Action1;
 
 
-public class VedioFragment extends Fragment {
+public class VideoFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -35,7 +35,7 @@ public class VedioFragment extends Fragment {
 
 
 
-    public VedioFragment() {
+    public VideoFragment() {
         // Required empty public constructor
     }
 
@@ -45,11 +45,11 @@ public class VedioFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment VedioFragment.
+     * @return A new instance of fragment VideoFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static VedioFragment newInstance(String param1, String param2) {
-        VedioFragment fragment = new VedioFragment();
+    public static VideoFragment newInstance(String param1, String param2) {
+        VideoFragment fragment = new VideoFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
