@@ -82,7 +82,7 @@ public class YoutubeVideoAdapter extends RecyclerView.Adapter<YoutubeVideoAdapte
                 videoThumb.setImageResource(R.drawable.loading_thumbnail);
                 loader.setVideo(youtubeVideo.getVideoId());
             }
-            int newid = (int) System.currentTimeMillis();
+            int newid = (int) (System.currentTimeMillis()%1000000);
             ((YoutubeVideoViewHolder) holder).frameLayout.setId(newid);
             holder1.youtubeVideoPlayBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
